@@ -2,7 +2,7 @@ package LeetCode
 
 import scala.util.Try
 
-object Problem4 extends App {
+object LcProblem4 extends App {
   def findMedianSortedArrays(nums1: Array[Int], nums2: Array[Int]): Double = {
     val queue = new scala.collection.mutable.Queue[Int]()
     val totalLength = nums1.length + nums2.length
