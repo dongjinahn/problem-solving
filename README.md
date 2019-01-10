@@ -4,7 +4,7 @@
 
 1. To improve my problem-solving skill.
 2. To improve my understanding of algorithm.
-3. To improve my `scala` programming skill.
+3. To improve my [scala](https://www.scala-lang.org/) programming skill.
 4. To share my understanding & discuss about.
 5. To motivate myself.
 
