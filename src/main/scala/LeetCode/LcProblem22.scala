@@ -7,7 +7,7 @@ object LcProblem22 extends App {
     }
     def closable(): Boolean = this.openCount > this.closeCount
     def openable(pairCount: Int): Boolean = pairCount > this.openCount
-    override def toString = this.str
+    override def toString: String = this.str
   }
 
   def generateParenthesis(n: Int): List[String] = {
