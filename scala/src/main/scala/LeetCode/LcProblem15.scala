@@ -1,6 +1,8 @@
+package main.scala.LeetCode
+
 import scala.collection.mutable.ListBuffer
 
-object Solution {
+object LcProblem15 {
   def threeSum(nums: Array[Int]): List[List[Int]] = {
     val oneSet = scala.collection.mutable.HashSet[Int]()
     val twoMap = scala.collection.mutable.SortedMap[Int, ListBuffer[List[Int]]]()

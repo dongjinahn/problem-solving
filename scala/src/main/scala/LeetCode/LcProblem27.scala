@@ -1,4 +1,6 @@
-object Solution {
+package main.scala.LeetCode
+
+object LcProblem27 {
   def removeElement(nums: Array[Int], value: Int): Int = {
     var i = 0
     var n = nums.length
