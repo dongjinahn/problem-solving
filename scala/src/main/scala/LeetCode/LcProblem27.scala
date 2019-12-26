@@ -1,3 +1,5 @@
+package LeetCode
+
 object LcProblem27 {
   def removeElement(nums: Array[Int], value: Int): Int = {
     var i = 0
