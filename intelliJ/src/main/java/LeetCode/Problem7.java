@@ -10,15 +10,15 @@ public class Problem7 {
 
     public static int reverse(int x) {
         int res = 0;
-        boolean hasError = false;
+        boolean hasException = false;
         while (x != 0) {
             try {
                 res = Math.multiplyExact(res, 10);
                 res = Math.addExact(res, x % 10);
             } catch (ArithmeticException e) {
-                hasError = true;
+                hasException = true;
             }
-            if (hasError) {
+            if (hasException) {
                 // try catch중에 return하는건 anti-pattern
                 return 0;
             }
