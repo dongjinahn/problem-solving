@@ -1,23 +1,20 @@
 package LeetCode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Problem242 {
     public boolean isAnagram(String s, String t) {
-        return getCharCountMap(s).equals(getCharCountMap(t));
+        return Arrays.equals(getCharCountArray(s), getCharCountArray(t));
     }
 
-    private Map<Character, Integer> getCharCountMap(String s) {
-        final Map<Character, Integer> map = new HashMap<>();
+    private int[] getCharCountArray(String s) {
+        final int[] arr = new int[26];
         for (char ch : s.toCharArray()) {
-            if (map.containsKey(ch)) {
-                final int prevCount = map.get(ch);
-                map.put(ch, prevCount + 1);
-            } else {
-                map.put(ch, 1);
-            }
+            final int index = 97 - ch;
+            arr[index] = arr[index] + 1;
         }
-        return map;
+        return arr;
     }
 }
