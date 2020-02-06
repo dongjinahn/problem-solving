@@ -13,7 +13,7 @@ public class Problem66 {
     }
 
     public static int[] plusOne(int[] digits) {
-        final Vector<Integer> v = new Vector<>();
+        final Vector<Integer> v = new Vector<>(digits.length + 1);
 
         final int lastDigit = digits[digits.length - 1];
         boolean hasCarry = lastDigit == 9;
@@ -22,7 +22,6 @@ public class Problem66 {
         } else {
             v.add(0, lastDigit + 1);
         }
-
 
         for (int i = digits.length - 2; i >= 0; i -= 1) {
             final int n = digits[i];
