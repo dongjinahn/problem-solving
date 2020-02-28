@@ -1,4 +1,4 @@
-package programmers.skillcheck1;
+package programmers;
 
 import java.util.Arrays;
 
