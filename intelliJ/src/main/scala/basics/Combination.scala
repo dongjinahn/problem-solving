@@ -6,9 +6,7 @@ package basics
 object Combination extends App {
   def combination(l: List[Int], selectNumber: Int): List[List[Int]] = {
     if (selectNumber == 1) {
-      return l map {
-        x => List(x)
-      }
+      return l map { x => List(x) }
     }
 
     val ans = scala.collection.mutable.Buffer[List[Int]]()
