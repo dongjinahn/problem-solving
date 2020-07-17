@@ -2,8 +2,9 @@ package LeetCode
 
 import scala.collection.mutable
 
-object Problem925 extends App {
+object LcProblem925 extends App {
   println(group("aaleex"))
+
   def isLongPressedName(name: String, typed: String): Boolean = {
     val n = group(name)
     val t = group(typed)
