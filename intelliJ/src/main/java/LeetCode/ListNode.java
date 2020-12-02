@@ -9,7 +9,7 @@ public class ListNode {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder(z50);
+        final StringBuilder sb = new StringBuilder();
         ListNode cur = this;
         sb.append(this.val);
         while (cur.next != null) {
